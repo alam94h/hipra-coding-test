@@ -1,0 +1,20 @@
+<div class="header-container">
+  <button type="button" (click)="goBack()">
+    <mat-icon>keyboard_arrow_left</mat-icon>
+  </button>
+  <h2>Trim Details</h2>
+</div>
+<div *ngIf="trim">
+  <mat-list>
+    <mat-list-item *ngFor="let property of slicedTrimProperties">
+      <span mat-line><strong>{{ property.label.replace(RegExp('_', 'g'), ' ')}}:</strong> {{ property.value }}</span>
+    </mat-list-item>
+  </mat-list>
+
+  <mat-paginator
+    [length]="trimProperties.length"
+    [pageSize]="pageSize"
+    [pageIndex]="pageIndex"
+    (page)="onPageChange($event)">
+  </mat-paginator>
+</div>

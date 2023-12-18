@@ -1,0 +1,41 @@
+.mat-elevation-z8 {
+  margin-bottom: 2em;
+}
+
+.loading-spinner, .loading-spinner-overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter-input {
+  width: 100%;
+}
+
+.filter-input mat-icon {
+  color: #808080;
+}
+
+.custom-row mat-icon:hover {
+  cursor: pointer;
+  color: #007bff;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+button:hover {
+  color: #007bff;
+}
